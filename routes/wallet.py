@@ -16,8 +16,3 @@ def show_history(minumero: str) -> dict:
 @routes_wallet.post('/pagar/mimumero/{minumero}/destnumero/{destnumero}/valor/{valor}')
 def pay(minumero: str, destnumero: str, valor: str) -> dict:
     return pay_(minumero, destnumero, valor)
-
-"""
-/billetera/pagar?minumero=XXXX&numerodestino=YYYY&valor=ZZZZ
-/billetera/historial?minumero=XXXX
-"""

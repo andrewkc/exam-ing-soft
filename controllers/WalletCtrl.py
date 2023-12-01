@@ -53,10 +53,6 @@ def pay_(minumero: str = Form(...), destnumero: str = Form(...), valor: str = Fo
             date=str(datetime.now()),
             value=valor
         )
-        print("----------")
-        print("----------")
-        print(op)
-        print("----------")
         Ops.append(op)
         
         for acc in DB:
